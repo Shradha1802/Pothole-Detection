@@ -1,0 +1,20 @@
+/* Reset Vite's default template CSS that boxes/centers the app.
+   Replace the ENTIRE contents of src/index.css with this file. */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  max-width: none;      /* removes Vite default's max-width: 1280px */
+  text-align: initial;  /* removes Vite default's text-align: center */
+}
+
+body {
+  background: #0b0f16;
+  font-family: sans-serif;
+}

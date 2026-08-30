@@ -1,0 +1,139 @@
+// auth.form.scss
+// Styling for the official Login (and future Register) forms, matching
+// PotholeGuard's dark theme + cyan accent used across the rest of the app.
+
+// Defensive reset — in case index.css's reset isn't fully applying on this
+// route, this guarantees no default browser margin/scrollbar shows through.
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;        // chaining height:100% through the ancestor chain is more
+  overflow-x: hidden;  // reliable than 100vh alone, which can leave a 1px gap
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  background: #0b0f16;
+  height: 100%;
+  min-height: 100vh;   // fallback for browsers where the ancestor chain above doesn't apply
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: #e6edf5;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+
+  .brand-pothole {
+    color: #e6edf5;
+  }
+
+  .brand-guard {
+    color: #22d3ee;
+  }
+}
+
+.form-container {
+  width: 100%;
+  max-width: 360px;
+  padding: 32px;
+  background: #111826;
+  border: 1px solid #1e2836;
+  border-radius: 12px;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 24px;
+    color: #e6edf5;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    label {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #8393a8;
+    }
+
+    input {
+      background: #0b0f16;
+      border: 1px solid #1e2836;
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 14px;
+      color: #e6edf5;
+      outline: none;
+
+      &:focus {
+        border-color: #22d3ee;
+      }
+
+      &::placeholder {
+        color: #5b6b82;
+      }
+    }
+  }
+
+  .button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 4px;
+  }
+
+  .primary-button {
+    background: #22d3ee;
+    color: #0b0f16;
+
+    &:hover {
+      background: #67e2f2;
+    }
+  }
+
+  p {
+    margin-top: 16px;
+    font-size: 13px;
+    color: #8393a8;
+
+    a {
+      color: #22d3ee;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
