@@ -152,8 +152,5 @@ Copyright (c) 2026 Shradha Choudhary
 
 ## 👥 Authors
 
-Built as part of Project 21ECP302L, Department of Electronics & Communication Engineering, SRM Institute of Science and Technology (2026), under the guidance of Dr. Sayantani Bhattacharya.
-
+Built as part of group project
 - **Shradha Choudhary** — [@Shradha1802](https://github.com/Shradha1802)
-- **Vaibhav Raj Gupta**
-- **Sumukh Hegde**
