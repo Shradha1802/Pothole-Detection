@@ -154,3 +154,4 @@ Copyright (c) 2026 Shradha Choudhary
 
 Built as part of group project
 - **Shradha Choudhary** — [@Shradha1802](https://github.com/Shradha1802)
+- **Ayush Kumar Jha**
